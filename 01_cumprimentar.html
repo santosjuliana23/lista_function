@@ -7,10 +7,19 @@
     */
 
     //Entrada
+    function cumprimentar(nome) {
+        if(new Date().getHours() < 12){
+            return('bom dia ' + nome)
+        } else {
+            return('boa tarde')
+        }
+    }
 
 
     //Processamento
-
+    const nome = prompt(`informe seu nome.`)
+    let saudacao = cumprimentar(nome);
+    document.write(saudacao);
 
     //Saída
     

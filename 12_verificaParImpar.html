@@ -5,11 +5,18 @@
     */
 
     //Entrada
-
+    const numero = Number(prompt(`informe um número.`))
 
     //Processamento
-
+    function sabernumero(numero){
+        if(numero % 2 == 0){
+            return(`é um número par.`)
+        } else {
+            return(`é um número ímpar.`)
+        }
+    }
 
     //Saída
+    document.write(sabernumero(numero));
 
 </script>
