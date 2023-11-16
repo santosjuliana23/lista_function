@@ -8,6 +8,18 @@
 
     //Entrada
 
+    let palavra = prompt(`Insira uma palavra e direi a quantidade de vogais`).toLowerCase();
+    function contador(palavra){
+        let contagem = 0;
+        for(l of palavra){
+            if(l == "a" || l == "e" || l == "i" || l == "o" || l == "u"){
+                contagem ++
+            }
+        }
+        return(contagem);
+    }
+    document.write(`A palavra "${palavra}" contem ${contador(palavra)} vogais`);
+
 
     //Processamento
 

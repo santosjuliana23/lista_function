@@ -7,6 +7,11 @@
 
     //Entrada
 
+    let temperatura = Number(prompt(`Insira a temperatura em Fahrenheit e converterei para Graus Celsius`));
+    function conversao(temperatura){
+        return((temperatura - 32) * 5 / 9)
+    }
+    document.write(`${conversao(temperatura)}°C`);
 
     //Processamento
 

@@ -5,13 +5,17 @@
     */
 
     //Entrada
-    const número = Number(prompt(`informe um número.`))
-
+    let number = Number(prompt(`Insira um numero e direi se é ou não primo`));
+    function verificar(number){
+        let verificador = 0
+        for(i = 1; i <= number; i++){
+            if(number%i == 0){ verificador++ }
+        }
+        if(verificador <= 2){ return("Este numero é Primo")} else { return("Este numero não é primo")}
+    }
+    document.write(verificar(number));
 
     //Processamento
-    function sabernumero(número){
-        
-    }
 
 
     //Saída
